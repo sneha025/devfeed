@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import HashSection from "./components/sections/hashnodeSection";
+import ProductHuntSection from "./components/sections/productSection";
+import { Box } from "@mui/system";
+import NavBar from "./components/navBar/navBar";
+import NewsSection from "./components/sections/newsSection";
+import React from "react";
+import Footer from "./components/footer/footer";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <React.Fragment>
+      <Box>
+        <NavBar />
+      </Box>
+      <Box sx={{ display: "flex", width: "100%" }}>
+        <HashSection />
+        <NewsSection />
+        <ProductHuntSection />
+      </Box>
+      <Box>
+        <Footer />
+      </Box>
+    </React.Fragment>
   );
 }
 
