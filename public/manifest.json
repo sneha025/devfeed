@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Developer Feed",
+  "author": "Sneha Maurya",
+  "version": "1.0.1",
+  "description": "This is developer feed extension",
+  "icons": {
+    "16": "df16.ico",
+    "48": "df.ico",
+    "120": "df120.ico"
+  },
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  }
+}
